@@ -167,10 +167,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811090854333_AddCompanyMapId.cs" />
-    <Compile Include="Migrations\201811090854333_AddCompanyMapId.Designer.cs">
-      <DependentUpon>201811090854333_AddCompanyMapId.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Organizations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -178,6 +174,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\nec2.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -243,11 +240,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811090854333_AddCompanyMapId.resx">
-      <DependentUpon>201811090854333_AddCompanyMapId.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OrganizationAdministration.DAL\OrganizationAdministration.DAL.csproj">

@@ -1,6 +1,4 @@
 C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministration\obj\Debug\OrganizationAdministration.csprojResolveAssemblyReference.cache
-C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministration\obj\Debug\OrganizationAdministration.Migrations.AddCompanyMapId.resources
-C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministration\obj\Debug\OrganizationAdministration.csproj.GenerateResource.Cache
 C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministration\bin\ApplicationInsights.config
 C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministration\bin\roslyn\csc.exe
 C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministration\bin\roslyn\csc.exe.config

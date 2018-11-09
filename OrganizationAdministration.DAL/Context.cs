@@ -10,7 +10,8 @@ namespace OrganizationAdministration.DAL
 {
    public class Context : DbContext
     {
-        public Context()// : base("OrganizationsDB")
+        public Context() 
+            //: base("OrganizationsDB")
         {
         
         }

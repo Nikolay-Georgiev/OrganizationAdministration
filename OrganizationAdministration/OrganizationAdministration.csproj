@@ -155,11 +155,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiEmployeesController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="ApiController.cs" />
+    <Compile Include="ApiCompaniesController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

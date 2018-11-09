@@ -13,7 +13,7 @@ using System.Collections.Generic;
 
 namespace OrganizationAdministration
 {
-    public class ApiController : System.Web.Http.ApiController
+    public class ApiCompaniesController : System.Web.Http.ApiController
     {
         private Context db = new Context();
 
@@ -28,11 +28,10 @@ namespace OrganizationAdministration
                         };
 
             return companies;
-            //return db.Companies;
         }
 
         // GET: api/CompaniesAPI/5
-        [ResponseType(typeof(Company))]
+        [ResponseType(typeof(CompanyDTO))]
         public async Task<IHttpActionResult> GetCompany(int id)
         { 
             var company = await db.Companies.Select(c =>
@@ -76,14 +75,19 @@ namespace OrganizationAdministration
         // PUT: api/CompaniesAPI/5
         [Route("api/createCompany/{id}")]
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutCompany(int id, Company company)
+        public async Task<IHttpActionResult> PutCompany(int id, CompanyDTO companyDto)
         {
+            Company company = new Company();
+
+            company.CompanyID = companyDto.CompanyID;
+            company.CompanyName = companyDto.CompanyName;
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != company.CompanyID)
+            if (id != companyDto.CompanyID)
             {
                 return BadRequest();
             }
@@ -110,19 +114,19 @@ namespace OrganizationAdministration
         }
 
         // POST: api/CompaniesAPI
-        [ResponseType(typeof(Company))]
-        public async Task<IHttpActionResult> PostCompany(Company company)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[ResponseType(typeof(Company))]
+        //public async Task<IHttpActionResult> PostCompany(Company company)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            db.Companies.Add(company);
-            await db.SaveChangesAsync();
+        //    db.Companies.Add(company);
+        //    await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = company.CompanyID }, company);
-        }
+        //    return CreatedAtRoute("DefaultApi", new { id = company.CompanyID }, company);
+        //}
 
         // DELETE: api/CompaniesAPI/5
         [ResponseType(typeof(Company))]

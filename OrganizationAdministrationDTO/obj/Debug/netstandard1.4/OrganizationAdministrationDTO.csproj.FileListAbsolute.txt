@@ -1,0 +1,3 @@
+C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministrationDTO\bin\Debug\netstandard1.4\OrganizationAdministrationDTO.deps.json
+C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministrationDTO\obj\Debug\netstandard1.4\OrganizationAdministrationDTO.csprojResolveAssemblyReference.cache
+C:\Users\nikolay.g.georgiev\documents\visual studio 2017\Projects\OrganizationAdministration\OrganizationAdministrationDTO\obj\Debug\netstandard1.4\OrganizationAdministrationDTO.AssemblyInfo.cs

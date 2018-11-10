@@ -19,7 +19,6 @@ namespace OrganizationAdministration.Data
         public string LastName { get; set; }
 
         [DataType(DataType.Date)]
-        //[DisplayFormat(DataFormatString = "{dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Start date:")]
         public DateTime EmploymentStartDate { get; set; }
 
@@ -29,11 +28,34 @@ namespace OrganizationAdministration.Data
         public int VacationDays { get; set; }
 
         [Display(Name = "Experience:")]
-        public ExperienceLevel ExperienceLevel { get; set; }
+        private ExperienceLevel experienceLevel;
+        public ExperienceLevel ExperienceLevel //{ get; set; }
+        {
+            get
+            {
+                return experienceLevel;
+            }
+            set
+            {
+                experienceLevel = value;
+                ExperiecnCode = (ExperiecnCode)(int)this.experienceLevel;
+            }
+        }
 
+        private ExperiecnCode experienceCode;
         [Display(Name = "Expierience code:")]
         [Editable(false)]
         public ExperiecnCode ExperiecnCode { get; set; }
+        //{ 
+        //    get
+        //    {
+        //        return this.experienceCode;
+        //    }
+        //    set
+        //    {
+                
+        //    }
+        //}
 
         [Display(Name = "Company:")]
         public int CompanyId { get; set; }

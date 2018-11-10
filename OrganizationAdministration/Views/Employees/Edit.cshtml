@@ -60,7 +60,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ExperienceLevel, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EnumDropDownListFor(model => model.ExperienceLevel, htmlAttributes: new { @class = "form-control" })
+                @Html.EnumDropDownListFor(model => model.ExperienceLevel, htmlAttributes: new { @class = "form-control", @onchange = "setExpCode()" })
                 @Html.ValidationMessageFor(model => model.ExperienceLevel, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ExperiecnCode, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EnumDropDownListFor(model => model.ExperiecnCode, htmlAttributes: new { @class = "form-control" })
+                @Html.EnumDropDownListFor(model => model.ExperiecnCode, htmlAttributes: new { @class = "form-control", disabled = "disabled" })
                 @Html.ValidationMessageFor(model => model.ExperiecnCode, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -95,4 +95,11 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+<script>
+      function setExpCode() {
+          $("#ExperiecnCode").val(parseInt($("#ExperienceLevel").val()));
+        }
+
+</script>
+
 }

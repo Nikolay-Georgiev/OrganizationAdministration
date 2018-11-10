@@ -14,6 +14,7 @@ namespace OrganizationAdministration.DAL
         {
             HasRequired(e=>e.Company).WithMany(e=>e.Employees).HasForeignKey(e=>e.CompanyId);
 
+            
             Property(e => e.FirstName).HasMaxLength(15).IsRequired();
             Property(e => e.LastName).HasMaxLength(15).IsRequired();
           

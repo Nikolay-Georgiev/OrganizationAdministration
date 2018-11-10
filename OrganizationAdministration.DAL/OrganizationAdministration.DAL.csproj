@@ -52,6 +52,7 @@
     <Compile Include="CompanyDTO.cs" />
     <Compile Include="EmployeeDTO.cs" />
     <Compile Include="EmployeeMap.cs" />
+    <Compile Include="OADBInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

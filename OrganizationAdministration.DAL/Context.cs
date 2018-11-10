@@ -13,8 +13,9 @@ namespace OrganizationAdministration.DAL
         public Context() 
             //: base("OrganizationsDB")
         {
-        
+            Database.SetInitializer<Context>(new OADBInitializer<Context>());
         }
+
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Company> Companies { get; set; }
 

@@ -17,7 +17,7 @@ namespace OrganizationAdministration.Tests.Controllers
         public void TestDetailsView()
         {
             var companiesController = new CompaniesController();
-            var result = companiesController.Details(2) as ViewResult;
+            var result = companiesController.Details(1) as ViewResult;
             Assert.AreEqual("Details", result.ViewName);
 
         }
